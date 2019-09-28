@@ -1,0 +1,41 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(Derelict\Regular.woff);
+}
+
+body {
+  background-image: url("HomeBackground.jpg");
+  background-repeat: no-repeat, no-repeat;
+  size: 100%;
+}
+
+.name {
+  color: whitesmoke;
+  font-size: 10vw;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  text-shadow: 3px 2px grey;
+  font-family: myFirstFont, Arial;
+}
+
+.name:hover {
+  color: lightgray;
+}
+
+.SVGLines {
+  stroke-width: 4px;
+  color: white;
+}
+
+.SVGLines:hover {
+  stroke-width: 6px;
+}
+/*# sourceMappingURL=HomeCss.css.map */
