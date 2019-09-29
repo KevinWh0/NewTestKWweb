@@ -87,7 +87,7 @@ function redirectVids() {
   var btn = document.createElement("div");
   btn.id = "Loading";
   btn.innerHTML = "Loading";
-  window.location.replace("/Videos.html");
+  window.location.replace("/NewTestKWweb/Videos.html");
 
   document.body.appendChild(btn);
 
