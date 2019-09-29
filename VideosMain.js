@@ -80,7 +80,7 @@ function redirectHome() {
   var btn = document.createElement("div");
   btn.id = "Loading";
   btn.innerHTML = "Loading";
-  window.location.replace("/Home.html");
+  window.location.replace("/NewTestKWweb/Home.html");
 
   document.body.appendChild(btn);
 
