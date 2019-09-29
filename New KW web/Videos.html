@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Videos - Kevin Who's Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="VideosMain.css"
+    />
+  </head>
+  <body id="Body">
+    <div id="Loading">Loading</div>
+    <!--Use a button as the div wont work-->
+    <!--<button class="bigger"></button>-->
+
+    <div class="NavBar" id="NavBar">
+      <button class="Vids" onclick="redirectHome()">Home</button>
+      <button class="Projects" onclick="redirectProjects()">Projects</button>
+    </div>
+    <button class="MenuButton" onclick="menuToggle()">
+      <svg height="30" width="40">
+        <line
+          x1="0"
+          y1="0"
+          x2="40"
+          y2="0"
+          class="SVGLines"
+          style="stroke:rgb(255, 255, 255);"
+        />
+        <line
+          x1="0"
+          y1="10"
+          x2="40"
+          y2="10"
+          class="SVGLines"
+          style="stroke:rgb(255, 255, 255);"
+        />
+        <line
+          x1="0"
+          y1="20"
+          x2="30"
+          y2="20"
+          class="SVGLines"
+          style="stroke:rgb(255, 255, 255);"
+        />
+        Sorry, your browser does not support inline SVG.
+      </svg>
+    </button>
+
+    <div class="__Main"></div>
+    <!--dehaze-->
+  </body>
+  <script src="VideosMain.js"></script>
+</html>
