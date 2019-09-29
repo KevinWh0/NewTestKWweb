@@ -125,7 +125,7 @@ function addVidsToFrame() {
     "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
   btn.allowFullscreen = true;
 
-  window.location.replace("/NewTestKWweb/Videos.html");
+  window.location.replace("https://kevinwh0.github.io/NewTestKWweb/Home.html");
 
   document.body.appendChild(btn);
 }
