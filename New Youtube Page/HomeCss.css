@@ -31,9 +31,13 @@ body {
   letter-spacing: 30px;
   text-shadow: 3px 2px grey;
   font-family: myFirstFont, Arial;
+  -webkit-animation: ease 1s FadeIn forwards;
+          animation: ease 1s FadeIn forwards;
 }
 
 .Desc {
+  /*starter opacitcy*/
+  opacity: 0;
   color: whitesmoke;
   font-size: 2vw;
   font-weight: bold;
@@ -47,6 +51,8 @@ body {
   text-shadow: 3px 2px grey;
   /*May need change of font*/
   font-family: monospace;
+  -webkit-animation: ease 1s FadeIn forwards 0.5s;
+          animation: ease 1s FadeIn forwards 0.5s;
 }
 
 .name:hover {
@@ -116,5 +122,101 @@ body {
   height: 200%;
   top: -200px;
   left: 0px;
+}
+
+/*Loader*/
+.redirect {
+  color: whitesmoke;
+  font-size: 4vw;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  text-shadow: 3px 2px grey;
+  font-family: myFirstFont, Arial;
+}
+
+@-webkit-keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes loading {
+  0% {
+    letter-spacing: 30px;
+  }
+  50% {
+    letter-spacing: 40px;
+  }
+  100% {
+    letter-spacing: 30px;
+  }
+}
+
+@keyframes loading {
+  0% {
+    letter-spacing: 30px;
+  }
+  50% {
+    letter-spacing: 40px;
+  }
+  100% {
+    letter-spacing: 30px;
+  }
+}
+
+#Loading {
+  color: whitesmoke;
+  font-size: 10vw;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  text-shadow: 3px 2px grey;
+  font-family: myFirstFont, Arial;
+  -webkit-animation: ease 1s FadeIn forwards;
+          animation: ease 1s FadeIn forwards;
+  -webkit-animation: loading 1s infinite;
+          animation: loading 1s infinite;
+}
+
+.Transition {
+  position: absolute;
+  top: 0px;
+  left: 190px;
+  /*SAME SIZE AS HEIGHT OF PARENT BAR*/
+  width: 100px;
+  height: 1000px;
+  background-color: transparent;
+  border: none;
+  /*Text Style*/
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
 }
 /*# sourceMappingURL=HomeCss.css.map */

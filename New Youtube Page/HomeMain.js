@@ -51,9 +51,50 @@ function menuToggle() {
     }
   }
 }
+
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if (new Date().getTime() - start > milliseconds) {
+      break;
+    }
+  }
+}
+
+function RedirectAnimate() {
+  //TODO fix this funtion to make transition more smooth
+  //print("Opening");
+  //var navBar = document.getElementById("NavBar");
+  //navBar.style.top =
+
+  var elem = document.getElementById("NavBar");
+  var MainElems = document.getElementById("__Main");
+  var MainDesc = document.getElementById("desc_Main");
+
+  var Body = document.getElementById("Body");
+
+  var id = setInterval(frameR, 80);
+
+  function frameR() {
+    elem.style.top += 40 + "px";
+    MainElems.style.top += 50 + "%";
+    MainDesc.style.top += 40 + "%";
+  }
+}
 //TODO add animations/loading screens
 function redirectVids() {
+  //RedirectAnimate();
+  document.body.innerHTML = "";
+  //document.body.style.background = "#000000";
+  var btn = document.createElement("div");
+  btn.id = "Loading";
+  btn.innerHTML = "Loading";
   window.location.replace("/Videos.html");
+
+  document.body.appendChild(btn);
+
+  //Transition
+  //sleep(1000);
 }
 function redirectProjects() {
   window.location.replace("/Projects.html");
