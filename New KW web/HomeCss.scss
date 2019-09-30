@@ -1,3 +1,6 @@
+$NavPos1: 4em;
+$NavPos2: 10em;
+
 @font-face {
   font-family: myFirstFont;
   src: url(Derelict\Regular.woff);
@@ -78,7 +81,7 @@ body {
 .Vids {
   position: absolute;
   top: 0px;
-  left: 80px;
+  left: $NavPos1;
   /*SAME SIZE AS HEIGHT OF PARENT BAR*/
   width: 100px;
   height: 100%;
@@ -93,7 +96,7 @@ body {
 .Projects {
   position: absolute;
   top: 0px;
-  left: 190px;
+  left: $NavPos2;
   /*SAME SIZE AS HEIGHT OF PARENT BAR*/
   width: 100px;
   height: 100%;
@@ -180,4 +183,21 @@ body {
   color: white;
   font-size: 2vw;
   font-weight: bold;
+}
+#ShootingStar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation: shootStar 4s infinite;
+}
+
+@keyframes shootStar {
+  0% {
+    top: -8000px;
+    left: 8000px;
+  }
+  100% {
+    top: 200px;
+    left: -200px;
+  }
 }

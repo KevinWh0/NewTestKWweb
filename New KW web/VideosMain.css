@@ -1,5 +1,5 @@
 html {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .SVGLines {
@@ -32,7 +32,7 @@ html {
 .Vids {
   position: absolute;
   top: 0px;
-  left: 80px;
+  left: 4em;
   /*SAME SIZE AS HEIGHT OF PARENT BAR*/
   width: 100px;
   height: 100%;
@@ -47,7 +47,7 @@ html {
 .Projects {
   position: absolute;
   top: 0px;
-  left: 190px;
+  left: 10em;
   /*SAME SIZE AS HEIGHT OF PARENT BAR*/
   width: 100px;
   height: 100%;

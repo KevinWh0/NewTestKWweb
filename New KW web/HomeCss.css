@@ -89,7 +89,7 @@ body {
 .Vids {
   position: absolute;
   top: 0px;
-  left: 80px;
+  left: 4em;
   /*SAME SIZE AS HEIGHT OF PARENT BAR*/
   width: 100px;
   height: 100%;
@@ -104,7 +104,7 @@ body {
 .Projects {
   position: absolute;
   top: 0px;
-  left: 190px;
+  left: 10em;
   /*SAME SIZE AS HEIGHT OF PARENT BAR*/
   width: 100px;
   height: 100%;
@@ -218,5 +218,35 @@ body {
   color: white;
   font-size: 2vw;
   font-weight: bold;
+}
+
+#ShootingStar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: shootStar 4s infinite;
+          animation: shootStar 4s infinite;
+}
+
+@-webkit-keyframes shootStar {
+  0% {
+    top: -8000px;
+    left: 8000px;
+  }
+  100% {
+    top: 200px;
+    left: -200px;
+  }
+}
+
+@keyframes shootStar {
+  0% {
+    top: -8000px;
+    left: 8000px;
+  }
+  100% {
+    top: 200px;
+    left: -200px;
+  }
 }
 /*# sourceMappingURL=HomeCss.css.map */
