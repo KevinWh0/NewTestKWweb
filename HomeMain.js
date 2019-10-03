@@ -51,6 +51,35 @@ function menuToggle() {
     }
   }
 }
+//!ANIMATION STAR STUFF STARTS
+function setProperty(duration, X, Y) {
+  var html = document.getElementsByTagName("html")[0];
+  //html.style.setProperty("--animation-delay", duration + "s");
+  html.style.setProperty("--zeroX", X + "px");
+  html.style.setProperty("--zeroY", -Y + "px");
+  html.style.setProperty("--DoneX", -X + "px");
+  html.style.setProperty("--DoneY", Y + "px");
+
+  //console.log(duration);
+  //changeAnimationTime();
+}
+//var start = 0;
+function changeAnimationTime() {
+  const animationDuration = Math.round(Math.random() * 50);
+  const X = Math.round(Math.random() * window.innerWidth);
+  const Y = Math.round(Math.random() * window.innerHeight);
+  //console.log(animationDuration);
+  setProperty(animationDuration, X, Y);
+}
+loopStar();
+function loopStar() {
+  var id = setInterval(loop, 70);
+
+  function loop() {
+    changeAnimationTime();
+  }
+}
+//!STAR ANIMATION STUFF ENDS
 
 function sleep(milliseconds) {
   var start = new Date().getTime();
@@ -87,7 +116,7 @@ function redirectVids() {
   var btn = document.createElement("div");
   btn.id = "Loading";
   btn.innerHTML = "Loading";
-  window.location.replace("/NewTestKWweb/Videos.html");
+  window.location.replace("/Videos.html");
 
   document.body.appendChild(btn);
 
@@ -95,5 +124,11 @@ function redirectVids() {
   //sleep(1000);
 }
 function redirectProjects() {
+  document.body.innerHTML = "";
+  //document.body.style.background = "#000000";
+  var btn = document.createElement("div");
+  btn.id = "Loading";
+  btn.innerHTML = "Loading";
   window.location.replace("/Projects.html");
+  document.body.appendChild(btn);
 }
