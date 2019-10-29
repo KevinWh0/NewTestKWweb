@@ -1,6 +1,9 @@
+$NavPos1: 4em;
+$NavPos2: 8em;
+
 @font-face {
   font-family: myFirstFont;
-  src: url(Derelict\Regular.woff);
+  src: url(Derelict%20Regular.woff);
 }
 html {
   overflow: hidden;
@@ -9,7 +12,7 @@ html {
 body {
   background-image: url("HomeBackground.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-size: 100%;
+  background-size: 125%;
   /*background-size: auto; This covers on phones, but does not work with the animation*/
   width: 100%;
   height: 100%;
@@ -27,7 +30,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 30px;
   text-shadow: 3px 2px grey;
-  font-family: myFirstFont, Arial;
+  font-family: Arial;
   animation: ease 1s FadeIn forwards;
 }
 .Desc {
@@ -69,18 +72,19 @@ body {
 /*Temp*/
 .NavBar {
   position: relative;
-  width: 100%;
+  width: 110%;
   height: 200px;
   background-color: rgba(0, 0, 0, 0.507);
-  top: -250px;
+  top: -270px;
   left: -10px;
 }
 .Vids {
+  transition-duration: 0.8s;
   position: absolute;
   top: 0px;
-  left: 80px;
+  left: $NavPos1;
   /*SAME SIZE AS HEIGHT OF PARENT BAR*/
-  width: 100px;
+  width: 4em;
   height: 100%;
   background-color: transparent;
   border: none;
@@ -91,11 +95,12 @@ body {
   font-weight: bold;
 }
 .Projects {
+  transition-duration: 0.8s;
   position: absolute;
   top: 0px;
-  left: 190px;
+  left: $NavPos2;
   /*SAME SIZE AS HEIGHT OF PARENT BAR*/
-  width: 100px;
+  width: 5em;
   height: 100%;
   background-color: transparent;
   border: none;
@@ -105,6 +110,17 @@ body {
   font-size: 2vw;
   font-weight: bold;
 }
+.Vids:hover {
+  background-color: rgba(240, 248, 255, 0.226);
+  transition-duration: 0.8s;
+  box-shadow: 0px 2px #ffffff;
+}
+.Projects:hover {
+  background-color: rgba(240, 248, 255, 0.226);
+  transition-duration: 0.8s;
+  box-shadow: 0px 2px #ffffff;
+}
+
 .__Main {
   position: relative;
   width: 100%;
@@ -180,4 +196,31 @@ body {
   color: white;
   font-size: 2vw;
   font-weight: bold;
+}
+:root {
+  --animation-time: 1s;
+  --animation-delay: 1s;
+
+  --zeroX: 8000px;
+  --doneX: -800px;
+  --zeroY: -8000px;
+  --doneY: 800px;
+}
+#ShootingStar {
+  position: absolute;
+  top: -100px;
+  left: 0px;
+
+  animation: shootStar var(--animation-time) infinite 1s;
+}
+
+@keyframes shootStar {
+  0% {
+    top: var(--zeroY);
+    left: var(--zeroX);
+  }
+  100% {
+    top: var(--doneY);
+    left: var(--doneX);
+  }
 }

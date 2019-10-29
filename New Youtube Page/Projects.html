@@ -3,32 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Home - Kevin Who's Site</title>
-
+    <title>Projects - Kevin Who's Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="HomeCss.css" />
-    <script src="HomeMain.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="projectsMain.css"
+    />
+    <script src="projectsMain.js"></script>
   </head>
-
   <body id="Body">
-    <div id="ShootingStar">
-      <svg height="1000" width="1000">
-        <line
-          x1="1000"
-          y1="0"
-          x2="900"
-          y2="100"
-          style="stroke:rgb(255, 255, 255);"
-        />
-        Sorry, your browser does not support inline SVG.
-      </svg>
-    </div>
+    <div id="Loading">Loading</div>
     <!--Use a button as the div wont work-->
     <!--<button class="bigger"></button>-->
 
     <div class="NavBar" id="NavBar">
-      <button class="Vids" onclick="redirectVids()">Videos</button>
-      <button class="Projects" onclick="redirectProjects()">Projects</button>
+      <button class="Home" onclick="redirectHome()">Home</button>
+      <button class="Projects" onclick="redirectVids()">Videos</button>
     </div>
     <button class="MenuButton" onclick="menuToggle()">
       <svg height="30" width="40">
@@ -60,10 +52,6 @@
       </svg>
     </button>
 
-    <div class="__Main">
-      <h1 class="name" id="__Main">Kevin Who</h1>
-      <p class="Desc" id="desc_Main"><i>"Minecraft, Roblox, and more!"</i></p>
-    </div>
-    <!--dehaze-->
+    <div class="__Main" id="__Main"></div>
   </body>
 </html>
