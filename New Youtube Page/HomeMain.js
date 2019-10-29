@@ -117,7 +117,7 @@ function redirectVids() {
   btn.id = "Loading";
   btn.innerHTML = "Loading";
 
-  window.location.replace("/Videos.html");
+  window.location.replace("/Social.html");
 
   document.body.appendChild(btn);
 

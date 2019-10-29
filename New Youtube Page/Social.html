@@ -3,31 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Home - Kevin Who's Site</title>
-
+    <title>Videos - Kevin Who's Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="HomeCss.css" />
-    <script src="HomeMain.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="SocialMain.css"
+    />
   </head>
-
   <body id="Body">
-    <div id="ShootingStar">
-      <svg height="1000" width="1000">
-        <line
-          x1="1000"
-          y1="0"
-          x2="900"
-          y2="100"
-          style="stroke:rgb(255, 255, 255);"
-        />
-        Sorry, your browser does not support inline SVG.
-      </svg>
-    </div>
+    <div id="Loading">Loading</div>
     <!--Use a button as the div wont work-->
     <!--<button class="bigger"></button>-->
 
     <div class="NavBar" id="NavBar">
-      <button class="Vids" onclick="redirectVids()">Social</button>
+      <button class="Home" onclick="redirectHome()">Home</button>
       <button class="Projects" onclick="redirectProjects()">Projects</button>
     </div>
     <button class="MenuButton" onclick="menuToggle()">
@@ -60,10 +51,24 @@
       </svg>
     </button>
 
-    <div class="__Main">
-      <h1 class="name" id="__Main">Kevin Who</h1>
-      <p class="Desc" id="desc_Main"><i>"Minecraft, Roblox, and more!"</i></p>
+    <div class="__Main" id="__Main">
+      <h1 class="Title">Social</h1>
     </div>
-    <!--dehaze-->
+    <!--Twitter-->
+
+    <a
+      class="twitter-timeline"
+      data-theme="dark"
+      width="20%"
+      href="https://twitter.com/KevinWho5?ref_src=twsrc%5Etfw"
+      >Tweets by KevinWho5</a
+    >
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+    <!--The end of Twitter-->
   </body>
+  <script src="SocialMain.js"></script>
 </html>
