@@ -3,7 +3,7 @@ $NavPos2: 8em;
 
 @font-face {
   font-family: myFirstFont;
-  src: url(Derelict\Regular.woff);
+  src: url(Derelict%20Regular.woff);
 }
 html {
   overflow: hidden;
@@ -13,6 +13,7 @@ body {
   background-image: url("HomeBackground.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 125%;
+  background-color: #000530;
   /*background-size: auto; This covers on phones, but does not work with the animation*/
   width: 100%;
   height: 100%;
@@ -30,7 +31,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 30px;
   text-shadow: 3px 2px grey;
-  font-family: myFirstFont, Arial;
+  font-family: Arial;
   animation: ease 1s FadeIn forwards;
 }
 .Desc {

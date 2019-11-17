@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Videos - Kevin Who's Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="SocialMain.css"
+    />
+  </head>
+  <body id="Body" onload="setTimeout(FixTwitter, 3000)">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/GDi0I2kL1JU"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/Hni1DKSbgYM"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/t-5_oLK8364"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/XJ7rC3AYM6c"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+    <br />
+
+    <div id="Loading">Loading</div>
+
+    <!--Use a button as the div wont work-->
+    <!--<button class="bigger"></button>-->
+
+    <div class="NavBar" id="NavBar">
+      <button class="Home" onclick="redirectHome()">Home</button>
+      <button class="Projects" onclick="redirectProjects()">Projects</button>
+    </div>
+    <button class="MenuButton" onclick="menuToggle()">
+      <svg height="30" width="40">
+        <line
+          x1="0"
+          y1="0"
+          x2="40"
+          y2="0"
+          class="SVGLines"
+          style="stroke:rgb(255, 255, 255);"
+        />
+        <line
+          x1="0"
+          y1="10"
+          x2="40"
+          y2="10"
+          class="SVGLines"
+          style="stroke:rgb(255, 255, 255);"
+        />
+        <line
+          x1="0"
+          y1="20"
+          x2="30"
+          y2="20"
+          class="SVGLines"
+          style="stroke:rgb(255, 255, 255);"
+        />
+        Sorry, your browser does not support inline SVG.
+      </svg>
+    </button>
+
+    <div class="TitleContainer">
+      <h1 class="Title">Social</h1>
+    </div>
+
+    <div class="__Main" id="__Main"></div>
+
+    <!--<iframe
+      src="https://www.sociablekit.com/app/embed/index.php?embed_id=30348"
+      frameborder="0"
+      class="Vids"
+      width="100%"
+      height="100000"
+    ></iframe>-->
+    <!--Twitter-->
+    <div class="TwitterContainer">
+      <a
+        class="twitter-timeline"
+        data-theme="dark"
+        height="50%";
+        href="https://twitter.com/KevinWho5?ref_src=twsrc%5Etfw"
+        >Tweets by KevinWho5</a
+      >
+    </div>
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+    <!--The end of Twitter-->
+
+    <!--Desc next to twitter-->
+    <div class="Desc">klsafkjaaaaaaaaalakjflkdjslkgjkljdskaggldjjgkladdghkjalhkjgdhkjhdkglhdahdkljghakjghkhdkjhjkdgahkjhgjkdhjkjdghdg</div>
+  </body>
+  <script src="SocialMain.js"></script>
+</html>

@@ -33,7 +33,7 @@ function menuToggle() {
         pos -= 10;
         MainPos -= 1;
         elem.style.top = pos + "px";
-        MainElems.style.top = MainPos + "%";
+        //MainElems.style.top = MainPos + "%";
         Body.style.backgroundSize = MainPos + 85 + "%";
       }
     } else {
@@ -43,7 +43,7 @@ function menuToggle() {
         pos += 10;
         MainPos += 1;
         elem.style.top = pos + "px";
-        MainElems.style.top = MainPos + "%";
+        //MainElems.style.top = MainPos + "%";
         Body.style.backgroundSize = MainPos + 85 + "%";
       }
     }
@@ -160,4 +160,43 @@ function addVidsToFrame() {
   for (let index = 0; index < ids.length; index++) {
     addVidToFrame(ids[index], 0.2);
   }
+}
+
+//Vid Slide Show
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+function FixTwitter() {
+  var Twitter = document.getElementsByClassName("twitter-widget-0");
+  Twitter.style = "";
+
+  //Twitter.style.top = "80%";
 }
