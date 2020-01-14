@@ -117,7 +117,7 @@ function redirectVids() {
   btn.id = "Loading";
   btn.innerHTML = "Loading";
 
-  window.location.replace("/Social.html");
+  window.location.replace("https://kevinwh0.github.io/NewTestKWweb/Social.html");
 
   document.body.appendChild(btn);
 
@@ -130,6 +130,6 @@ function redirectProjects() {
   var btn = document.createElement("div");
   btn.id = "Loading";
   btn.innerHTML = "Loading";
-  window.location.replace("/Projects.html");
+  window.location.replace("https://kevinwh0.github.io/NewTestKWweb/Projects.html");
   document.body.appendChild(btn);
 }
